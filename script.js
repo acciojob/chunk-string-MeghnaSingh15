@@ -1,6 +1,4 @@
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
 describe('My Test', () => {
   it('should work', () => {
@@ -20,7 +18,8 @@ describe('My Test', () => {
     }
     return arr;
 }
-
+const str = prompt("Enter String.");
+const size = prompt("Enter Chunk Size.");
     cy.on("window:alert", str => { 
       expect(str.toString()).to.equal([].toString()); 
     }); 
